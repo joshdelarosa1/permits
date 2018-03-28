@@ -19,7 +19,7 @@ str(DOB_License_ACTIVE)
 # data dictionary https://data.cityofnewyork.us/api/views/ic3t-wcy2/files/893bfaed-d4a8-4c77-8af4-e2db94078d8e?download=true&filename=DD_DOB%20Job%20Application%20Filings_2017-10-16.xlsx
 #sub set using website for now. this limits size of file. future subset can be down in API call.
 
-DOB_Job_Apps= read.csv("https://data.cityofnewyork.us/api/views/5t7k-fgnu/rows.csv?accessType=DOWNLOAD")  
+DOB_Job_Apps= read.csv("https://data.cityofnewyork.us/api/views/kwyj-n89q/rows.csv?accessType=DOWNLOAD")  
 
 head (DOB_Job_Apps)
 duped_jobs<-distinct(DOB_Job_Apps, Job..,.keep_all = TRUE)
