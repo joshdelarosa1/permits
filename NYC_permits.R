@@ -37,7 +37,7 @@ duped_permits<-distinct(DOB_Permits_Apps, Job..,.keep_all = TRUE)
 str (duped_permits)
 
 
-job_work_merge<-merge(x = duped_jobs, y = duped_permits, by = "Job..",all = TRUE)
+job_work_merge<-merge(x = duped_jobs, y = duped_permits, by = "Job..",all.x = TRUE)
 
 str(job_work_merge)
 write.csv(job_work_merge, file=gzfile("/Users/josuedelarosa/dev/NYC_permits/merged_work_jobs.csv"))
