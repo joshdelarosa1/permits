@@ -40,6 +40,6 @@ str (duped_permits)
 job_work_merge<-merge(x = duped_jobs, y = duped_permits, by = "Job..",all = TRUE)
 
 str(job_work_merge)
-write.csv(job_work_merge, "/Users/josuedelarosa/dev/NYC_permits/merged_work_jobs.csv")
+write.csv(job_work_merge, file=gzfile("/Users/josuedelarosa/dev/NYC_permits/merged_work_jobs.csv"))
 
 # to do- merge lic to perm data to pick up contact info. need to clean lic file as it is messy.
