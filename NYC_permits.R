@@ -40,3 +40,5 @@ str (duped_permits)
 job_work_merge<-merge(x = duped_jobs, y = duped_permits, by = "Job..",all = TRUE)
 
 str(job_work_merge)
+
+# to do- merge lic to perm data to pick up contact info. need to clean lic file as it is messy.
